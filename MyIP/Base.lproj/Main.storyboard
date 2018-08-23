@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyIP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-wv-WIP">
+                                <rect key="frame" x="16" y="122" width="288" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-Wt-IZC">
+                                        <rect key="frame" x="0.0" y="149" width="288" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZSX-Wt-IZC" secondAttribute="height" multiplier="144:23" id="dZG-Ox-k5a"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Loading...">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="45" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nkN-R9-xZa">
+                                        <rect key="frame" x="0.0" y="42" width="288" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nkN-R9-xZa" secondAttribute="height" multiplier="6:1" id="Xpc-Rp-ARn"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="What's My IP?">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="50" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stO-sp-LMb">
+                                        <rect key="frame" x="112" y="254" width="64" height="64"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="stO-sp-LMb" secondAttribute="height" multiplier="1:1" id="WZl-Sw-0OB"/>
+                                        </constraints>
+                                        <state key="normal" image="refresh"/>
+                                        <connections>
+                                            <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vu4-iS-xPO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nkN-R9-xZa" firstAttribute="leading" secondItem="PRD-wv-WIP" secondAttribute="leading" id="7nd-yF-wqt"/>
+                                    <constraint firstAttribute="trailing" secondItem="nkN-R9-xZa" secondAttribute="trailing" id="K1p-gd-1q3"/>
+                                    <constraint firstItem="ZSX-Wt-IZC" firstAttribute="leading" secondItem="PRD-wv-WIP" secondAttribute="leading" id="QXH-KY-Vxs"/>
+                                    <constraint firstItem="ZSX-Wt-IZC" firstAttribute="centerX" secondItem="PRD-wv-WIP" secondAttribute="centerX" id="V3e-4T-uIb"/>
+                                    <constraint firstItem="ZSX-Wt-IZC" firstAttribute="centerY" secondItem="PRD-wv-WIP" secondAttribute="centerY" id="WCN-1h-C8U"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZSX-Wt-IZC" secondAttribute="trailing" id="bmG-0z-pXX"/>
+                                    <constraint firstItem="stO-sp-LMb" firstAttribute="leading" secondItem="PRD-wv-WIP" secondAttribute="leading" constant="112" id="jbM-3j-Rzc"/>
+                                    <constraint firstAttribute="trailing" secondItem="stO-sp-LMb" secondAttribute="trailing" constant="112" id="jfL-EI-Esg"/>
+                                    <constraint firstItem="nkN-R9-xZa" firstAttribute="top" secondItem="PRD-wv-WIP" secondAttribute="top" constant="42" id="kVz-Se-enr"/>
+                                    <constraint firstAttribute="bottom" secondItem="stO-sp-LMb" secondAttribute="bottom" constant="26" id="pKh-rw-WFp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PRD-wv-WIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="DaP-yb-0Np"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PRD-wv-WIP" secondAttribute="trailing" constant="16" id="ITe-jJ-bZS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PRD-wv-WIP" secondAttribute="bottom" constant="102" id="Qvt-Bh-XxK"/>
+                            <constraint firstItem="PRD-wv-WIP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="znW-NP-g9f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="iplabel" destination="ZSX-Wt-IZC" id="fPr-gh-fus"/>
+                        <outlet property="refreshlabel" destination="stO-sp-LMb" id="cda-zf-YLg"/>
+                        <outlet property="whatsiplabel" destination="nkN-R9-xZa" id="buo-LM-Gsg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh" width="128" height="128"/>
+    </resources>
+</document>

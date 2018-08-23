@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "9d940603d7b0fa5e6facf380cdefd95b--iphone-minimalist-wallpaper-iphone-wallpaper-galaxy.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "9d940603d7b0fa5e6facf380cdefd95b--iphone-minimalist-wallpaper-iphone-wallpaper-galaxy-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "9d940603d7b0fa5e6facf380cdefd95b--iphone-minimalist-wallpaper-iphone-wallpaper-galaxy-2.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
